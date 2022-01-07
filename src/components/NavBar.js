@@ -29,7 +29,7 @@ import {
   AiOutlineShop
 } from 'react-icons/ai';
 export default function NavBar() {
-	const bg = useColorModeValue('white', 'gray.800');
+	const bg = useColorModeValue('#EA5C2B', 'gray.800');
 	const mobileNav = useDisclosure();
 
 	return (
@@ -42,7 +42,7 @@ export default function NavBar() {
 								display={{ base: 'flex', md: 'none' }}
 								aria-label="Open menu"
 								fontSize="20px"
-								color={useColorModeValue('gray.800', 'inherit')}
+								color={useColorModeValue('gray.200', 'inherit')}
 								variant="ghost"
 								icon={<AiOutlineMenu />}
 								onClick={mobileNav.onOpen}
@@ -85,7 +85,7 @@ export default function NavBar() {
 							<Button variant="ghost" leftIcon={<AiFillHome />} size="sm">
 								Home
 							</Button>
-							<Button variant="solid" leftIcon={<AiOutlineShop />} size="sm">
+							<Button variant="outline" leftIcon={<AiOutlineShop />} size="sm">
 								Market
 							</Button>
 							<Button variant="ghost" leftIcon={<AiFillRocket />} size="sm">
